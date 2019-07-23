@@ -1,0 +1,11 @@
+@import "config/variables";
+@import "mixins/mixins";
+
+$buttons: true; //controlar si se importan los mixins de botones.
+.button {
+    @include button(red);
+}
+
+.menu {
+    @include menu('.item', 'link')
+}

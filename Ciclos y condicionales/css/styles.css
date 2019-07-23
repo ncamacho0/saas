@@ -1,0 +1,18 @@
+/*@extend
+placeholder % */
+/* -------------------------------- */
+/*Condicionales para importar dependiendo necesidades, hacer condicionales
+en cada hoja de estilos. */
+/* -------------------------------------------- */
+/* Ciclo @for*/
+/* Ciclo @each */
+/*Lists*/
+/*Maps*/
+.button-key {
+  background: yellow; }
+
+.button-key {
+  background: green; }
+
+.button-key {
+  background: blue; }

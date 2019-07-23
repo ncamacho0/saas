@@ -1,0 +1,55 @@
+.menu {
+  background: red; }
+
+body {
+  color: red;
+  font-size: 2rem;
+  padding-top: 195px; }
+
+p {
+  padding-top: 20px; }
+
+.gray {
+  color: red; }
+
+ul {
+  animation: menu 1s; }
+  ul:hover {
+    color: green; }
+  ul::before {
+    content: "contenido"; }
+  ul li {
+    margin: 0; }
+  ul a {
+    display: block; }
+  ul span {
+    color: red; }
+  @media screen and (min-width: 640px) {
+    ul {
+      display: flex; } }
+
+@keyframes menu {
+  to {
+    color: red; } }
+
+.menu {
+  display: block;
+  font-size: 1em;
+  font-style: italic;
+  font-family: arial;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: auto; }
+  .menu-item {
+    color: red; }
+
+/* Tipos de datos
+    -Strings
+    -Numeros
+    -Colores
+    -Booleans
+    -Maps
+    -Lists
+
+*/
+.maps {
+  color: red; }

@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  margin: 1rem;
+  color: red; }
+  .button a {
+    text-decoration: none; }
+
+.menu {
+  margin-top: 0;
+  margin-bottom: o;
+  padding-left: 0;
+  list-style: none; }
+  .menu .item {
+    display: block; }
+  .menu link {
+    text-decoration: none;
+    display: block; }

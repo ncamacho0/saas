@@ -1,0 +1,27 @@
+@mixin button($color) {
+    @if $buttons {
+        display: inline-block;
+        margin: 1rem;
+        color: $color;
+        a {
+            text-decoration: none;  
+        }    
+    }
+    
+}
+
+
+@mixin menu($selector-item: '.menu-item',$selector-link: '.menu-link') {
+    margin-top: 0;
+    margin-bottom: o;
+    padding-left: 0;
+    list-style: none;     
+
+    #{$selector-item} {
+        display: block;
+    }
+    #{$selector-link} {
+        text-decoration: none;
+        display: block;
+    }
+}

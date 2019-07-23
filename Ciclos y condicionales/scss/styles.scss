@@ -1,0 +1,103 @@
+
+/*@extend
+placeholder % */
+
+
+// %button {
+//     display: inline-block;
+//     margin: 1rem 0;
+//     padding: .5rem 1.5rem;
+// }
+// .button {
+//     display: inline-block;
+//     margin: 10rem 0;
+//     padding: .5rem 1.5rem;
+// }
+
+// .button-alert {
+//     @extend .button;
+//     background: red;
+//     color: #fff
+// }
+
+
+// .button:hover{
+//     transform: translateY(-5px);
+// }
+
+// .button.active {
+//     @extend.button:hover;
+// }
+
+/* -------------------------------- */
+
+/*Condicionales para importar dependiendo necesidades, hacer condicionales
+en cada hoja de estilos. */
+
+// $buttons: true !default;
+// $colors: true !default;
+
+// $buttons: false;
+// $colors: false;
+// $dev: true;
+// @import 'components/base';
+// @import 'components/buttons';
+
+
+
+// @if (5 < 3){
+//     *{
+//         display: block;
+//     }
+    
+// } @else if (5 == 5){
+//     *{
+//         color: red;
+//     }
+    
+// }@else {
+//     *{
+//         color: gray;
+//     }
+// }
+
+
+
+/* -------------------------------------------- */
+
+/* Ciclo @for*/
+
+// @for $i from 1 to 100 {
+//     .column-#{$i}{
+//         width: $i * 1%;
+//     }
+    
+// }
+
+
+/* Ciclo @each */
+/*Lists*/
+
+// $colors: red green blue;
+
+// @each $color in $colors {
+//     .button-#{$color}{
+//         background: $color;
+//     }
+// }
+
+
+/*Maps*/
+
+$colors: (
+    primary: yellow,
+    secondary: green,
+    tertiary: blue
+);
+
+@each $key, $value in $colors {
+    .button-#{key} {
+        background: $value;
+    }
+    
+}
